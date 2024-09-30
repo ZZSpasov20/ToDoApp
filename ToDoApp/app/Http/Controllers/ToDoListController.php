@@ -34,4 +34,8 @@ class ToDoListController extends Controller
         $listItem->save();
         return redirect('/');
     }
+    public function deleteItem($id){
+        $listItem = ListItem::destroy($id);
+        return redirect('/');
+    }
 }
