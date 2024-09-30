@@ -27,4 +27,11 @@ class ToDoListController extends Controller
         $listItem->save();
         return redirect('/');
     }
+
+    public function markAsIncomplete($id){
+        $listItem = ListItem::find($id);
+        $listItem->is_complete = 0;
+        $listItem->save();
+        return redirect('/');
+    }
 }
