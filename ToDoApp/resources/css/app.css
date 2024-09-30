@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --backgroundBase:   #e3e9ff;
+        --backgroundElevated: #ffffff;
+        --accent: #af7eeb;
+        --textColor: #b5bac8;
+    }
+}
